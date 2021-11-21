@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Serveur des utilisateurs</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="big-title">Serveur des utilisateurs</h1>
+            <p>
+                Ce severeur est un serveur qui permet d'enregistrer les utilisateurs.
+            </p>
+            <p>C'est un serveur écrit en <span class="js">JavaScript</span> à l'aide d' <span class="express">Expressjs</span> qui est un framework <span class="node">Nodejs.</span></p>
+        </header>
+        <div class="block">
+            <h2 class="mid-title">Ce que permet ce server:</h2>
+            <ul>
+                <li>Enregistrment des utilisateurs</li>
+                <li>Obtenir l'ensemble de tous les utilisateurs enregistrés</li>
+                <li>Obtenir les données d'un utilisateur</li>
+                <li>Supprimer un utilisateur</li>
+                <li>Mettre à jour un utilisateur</li>
+            </ul>
+        </div>
+        <div class="block">
+            <h2 class="mid-title">Comment utiliser ?</h2>
+            <div>
+                <h3 class="small-title">Clonner le dépot github</h3>
+                <p>Vous pouvez accéder au dépot sur github sur le quel se trouve le code source et le clonener.</p>
+                <a class="git" href="https://github.com/samkindev/sbs-test">
+                    <img class="git-icon" src="github.svg" alt="github">
+                    <span>Lien vers le dépot github</span>
+                </a>
+            </div>
+            <div>
+                <h3 class="small-title">Accéder au serveur sur heroku</h3>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="mid-title">Obtenir tous les utilisateurs</h3>
+            <p>
+                Requête <span class="method">GET</span> au <span class="endpoint">/api/users</span>
+            </p>
+        </div>
+        <div class="block">
+            <h3 class="mid-title">Obtenir un utilisateur</h3>
+            <p>
+                Requête <span class="method">GET</span> au <span class="endpoint">/api/users/:userId</span>
+            </p>
+            <p><span class="label">Parametre http:</span> userId: id de l'utilisateur</p>
+        </div>
+        <div class="block">
+            <h3 class="mid-title">Ajouter un utilisateur</h3>
+            <p>
+                Requête <span class="method">POST</span> au <span class="endpoint">/users/</span>
+            </p>
+            <p><span class="label">Corps de la requête</p>
+            <ul>
+                <li>Nom: string</li>
+                <li>Postnom: string</li>
+                <li>Age: integer</li>
+                <li>Ville: string</li>
+            </ul>
+        </div>
+        <div class="block">
+            <h3 class="mid-title">Supprimer un utilisateur</h3>
+            <p>
+                Requête <span class="method">DELETE</span> au <span class="endpoint">/api/users/:userId</span>
+            </p>
+            <p><span class="label">Parametre http:</span> userId: id de l'utilisateur</p>
+        </div>
+        <div class="block">
+            <h3 class="mid-title">Mise à jour d'un utilisateur</h3>
+            <p>
+                Requête <span class="method">PATCH</span> au <span class="endpoint">/api/users/:userId</span>
+            </p>
+            <p><span class="label">Parametre http:</span> id de l'utilisateur</p>
+            <p><span class="label">Corps de la requête</p>
+            <ul>
+                <li>Nom: string</li>
+                <li>Postnom: string</li>
+                <li>Age: integer</li>
+                <li>Ville: string</li>
+            </ul>
+        </div>
+        <div class="block" style="display: flex; align-items: center;">
+            <p style="font-size: 14px;" class="author"><span class="label">Auteur:</span> Samson KYUNYU</p>
+            <p style="font-size: 14px; margin-left: 20px;" class="author">Développeur web - frontend et backend</p>
+        </div>
+    </div>
+</body>
+</html>

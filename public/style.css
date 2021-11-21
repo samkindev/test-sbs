@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    color: #444
+}
+
+ul {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto
+}
+
+.big-title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.mid-title {
+    line-height: 1.8;
+    font-size: 1.4rem; 
+    font-weight: lighter;
+}
+
+.small-title {
+    line-height: 1.5;
+    font-size: 0.9rem; 
+    font-weight: bold;
+}
+
+header {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+p, li {
+    font-size: 1rem;
+    line-height: 1.5
+}
+
+a {
+    color: rgb(0, 0, 175);
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.block {
+    padding: 15px 0;
+}
+
+.block:not(:last-child) {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.method {
+    display: inline-block;
+    padding: .5px 10px;
+    font-size: 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+
+.endpoint {
+    display: inline-block;
+    padding: .5px 10px;
+    font-size: 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+
+.git-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    padding: 10px 15px;
+    width: fit-content;
+    border: 1px solid #b6b6f9;
+    border-radius: 10px;
+    background-color: #f0f0ff;
+    margin: 10px 0
+}
+
+.git > span {
+    color: #000;
+    font-weight: bold;
+} 
+
+.js {
+    background: #f0f0ff;
+    font-weight: bold;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1px solid #b6b6f9;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.node {
+    background-color: #cbffca;
+    font-weight: bold;
+    padding: 1px 10px;
+    border: 1px solid #3aff37;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.express {
+    background-color: #d6edff;
+    font-weight: bold;
+    padding: 1px 10px;
+    border: 1px solid #259dff;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 15px;
+
+}
